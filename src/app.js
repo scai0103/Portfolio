@@ -1,8 +1,19 @@
-const express = require('express')
+const path = require('path')
+const express = require('express');
+const { homedir } = require('os');
 const app = express()
- 
+
+const publicDirectoryPath = path.join(__dirname, '../public');
+
+app.use(express.static(publicDirectoryPath));
+
+app.set('view engine', 'hbs');
+
 app.get('/', function (req, res) {
-  res.send('This is the Main Page');
+  res.render('index', {
+      title: "Home",
+      name: "Sen Cai"
+  });
 })
 
 app.get('/about', function (req, res) {
