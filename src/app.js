@@ -12,7 +12,10 @@ app.set('view engine', 'hbs');
 app.get('/', function (req, res) {
   res.render('index', {
       title: "Home",
-      name: "Sen Cai"
+      name: "Sen Cai",
+      introduction: "My name is Sen Cai, a software engineer and web designer. " +
+      "I have designed and improved MTA management system web client User Interface " +
+      "and built Passenager audio delivery system prototype for Staten Island Railroad"
   });
 })
 

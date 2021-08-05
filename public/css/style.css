@@ -1,5 +1,6 @@
 body{
-    background-color:#001240;
+    background-color:#fbeb00;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container{
@@ -57,4 +58,11 @@ nav{
 
 .work ion-icon, .contact ion-icon, .link ion-icon{
     font-size: 100px;
+}
+
+.introduction{
+    max-width: 1370px;
+    margin: 0 auto;
+    color:white;
+    background-color: teal;
 }
