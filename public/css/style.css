@@ -1,9 +1,9 @@
 body{
-    background-color: beige;
+    background-color:#001240;
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 1370px;
     margin: 0 auto;
     background-color: darkgray;
 }
@@ -20,6 +20,41 @@ nav{
     height: 150px;
 }
 
-.name{
-    color: darkgreen;
+.userdetail{
+    color: white;
+    background-color: #00a7db;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    flex-grow: 2;
+}
+
+.work{
+    background-color: #00c1ea;
+}
+
+.link{
+    background-color: #94d401;
+}
+
+.contact{
+    background-color: #61b100;
+}
+
+.work:hover, .link:hover, .contact:hover{
+    background-color: gray;
+}
+
+.work, .contact, .link{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.work ion-icon, .contact ion-icon, .link ion-icon{
+    font-size: 100px;
 }
