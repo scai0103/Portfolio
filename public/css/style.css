@@ -1,5 +1,5 @@
 body{
-    background-color:#fbeb00;
+    background-color:gray;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -44,9 +44,14 @@ nav{
     background-color: #61b100;
 }
 
-.work:hover, .link:hover, .contact:hover{
-    background-color: gray;
-}
+.contact:hover ion-icon {display: none}
+.contact:hover::before {content: "Contact";}
+
+.work:hover ion-icon {display: none}
+.work:hover::before {content: "Resume";}
+
+.link:hover ion-icon {display: none}
+.link:hover::before {content: "Link";}
 
 .work, .contact, .link{
     color: #fff;
@@ -54,6 +59,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    width: 150px;
 }
 
 .work ion-icon, .contact ion-icon, .link ion-icon{
@@ -64,5 +70,29 @@ nav{
     max-width: 1370px;
     margin: 0 auto;
     color:white;
-    background-color: teal;
+}
+
+.exp{
+    max-width: 1370px;
+    margin: 0 auto;
+    color:white;
+}
+
+.edu{
+    max-width: 1370px;
+    margin: 0 auto;
+    color:white;
+}
+
+.stjohns{
+    display: flex;
+    align-items: center;
+}
+
+.work_exp{
+    display: flex;
+    align-items: center;
+}
+
+.title{
 }
