@@ -32,7 +32,7 @@ nav{
     flex-grow: 2;
 }
 
-.work{
+.resume{
     background-color: #00c1ea;
 }
 
@@ -47,22 +47,24 @@ nav{
 .contact:hover ion-icon {display: none}
 .contact:hover::before {content: "Contact";}
 
-.work:hover ion-icon {display: none}
-.work:hover::before {content: "Resume";}
+.resume:hover {
+    background-color: #fff;
+}
 
 .link:hover ion-icon {display: none}
 .link:hover::before {content: "Link";}
 
-.work, .contact, .link{
+.resume, .contact, .link{
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     width: 150px;
+    height: auto;
 }
 
-.work ion-icon, .contact ion-icon, .link ion-icon{
+.resume ion-icon, .contact ion-icon, .link ion-icon{
     font-size: 100px;
 }
 
@@ -74,13 +76,13 @@ nav{
 
 .exp{
     max-width: 1370px;
-    margin: 0 auto;
+    margin: 65px auto;
     color:white;
 }
 
 .edu{
     max-width: 1370px;
-    margin: 0 auto;
+    margin: 65px auto;
     color:white;
 }
 
